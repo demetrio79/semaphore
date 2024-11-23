@@ -13,5 +13,5 @@
           path: "{{dir_down_win}}\\{{zbx_agent2_ver}}"
           arguments:
             - /qn
-            - "Server=arzbrepzbxprx01,172.31.223.15"
+            - "Server=arzbrepzbxprx01,172.31.223.15,172.31.14.136"
           state: present
