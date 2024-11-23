@@ -11,6 +11,7 @@
       - name: Install Zabbix Agent 2
         ansible.windows.win_package:
           path: "{{dir_down_win}}\\{{zbx_agent2_ver}}"
-          arguments: 
+          arguments:
+            - /qn
             - "Server=arzbrepzbxprx01, 172.31.223.15"
           state: present
