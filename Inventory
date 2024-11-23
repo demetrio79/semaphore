@@ -186,7 +186,6 @@ ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
 
 [windows_ad]
-172.31.14.156
 arzhorpadcon02.arezzo.local
 
 [windows_ad:vars]
