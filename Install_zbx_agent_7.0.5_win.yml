@@ -5,7 +5,7 @@
     tasks:
       - name: Copy Zabbix Agent 7.0.5
         ansible.windows.win_copy:
-          src: "{{local_repo}}/{{zbx_agent2_ver}}"
+          src: "{{repo_win_agent}}/{{zbx_agent2_ver}}"
           dest: "{{dir_down_win}}\\{{zbx_agent2_ver}}"
 
       - name: Install Zabbix Agent 2
