@@ -184,3 +184,14 @@ ansible_user=ansible.arezzo
 ansible_password="2154@ns!ble@R3770"
 ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
+
+[windows_ad]
+arzhorpadcon01.arezzo.local
+
+[windows_ad:vars]
+ansible_connection=winrm
+ansible_port=5986
+ansible_user=ansible.arezzo
+ansible_password="2154@ns!ble@R3770"
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_transport=ntlm
