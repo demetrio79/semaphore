@@ -3,7 +3,6 @@
 
     tasks:
       - name: Uninstall Zabbix Agent 4.2.8
-        win_package:
-          name: "Zabbix Agent (64-bit)"
+        ansible.windows.win_package:
           product_id: '{8797D2A2-92CB-47BA-8163-7F9F5DE509EA}'
           state: absent
