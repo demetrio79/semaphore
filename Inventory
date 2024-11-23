@@ -195,3 +195,16 @@ ansible_user=ansible.arezzo
 ansible_password="2154@ns!ble@R3770"
 ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
+
+[arzts]
+ARZTS03.arezzo.local
+ARZTS02.arezzo.local
+ARZTS01.arezzo.local
+
+[arzts:vars]
+ansible_connection=winrm
+ansible_port=5986
+ansible_user=ansible.arezzo
+ansible_password="2154@ns!ble@R3770"
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_transport=ntlm
