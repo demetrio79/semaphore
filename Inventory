@@ -1,7 +1,5 @@
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
-ansible_user=root
-ansible_password=P@ssw0rd
 
 [zznet]
 ARZBREDK8SCTR01.arezzo.local
@@ -41,15 +39,6 @@ ARZBREHWIS01.arezzo.local
 ARZBREPSUMA01.arezzo.local
 ARZBREPANS01.arezzo.local
 ARZBREPSMTP01.arezzo.local
-
-[qualitor]
-arzbrehqlt01.arezzo.local
-
-[ubuntu]
-[ubuntu:vars]
-ansible_user=qualitor
-ansible_password=qualitor
-ansible_sudo_pass=qualitor
 
 [windows_bre]
 ZDBGWQCI.arezzo.local
@@ -138,16 +127,12 @@ ARZBREPRDS07.arezzo.local
 [rds:vars]
 ansible_connection=winrm
 ansible_port=5986
-ansible_user=ansible.arezzo
-ansible_password="2154@ns!ble@R3770"
 ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
 
 [windows_bre:vars]
 ansible_connection=winrm 
 ansible_port=5986 
-ansible_user=ansible.arezzo
-ansible_password="2154@ns!ble@R3770"
 ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
 
@@ -163,8 +148,6 @@ arzcbopprint01.arezzo.local
 [windows_cbo:vars]
 ansible_connection=winrm
 ansible_port=5986
-ansible_user=ansible.arezzo
-ansible_password="2154@ns!ble@R3770"
 ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
 
@@ -180,8 +163,6 @@ ARZCARHCTR03.arezzo.local
 [windows_car:vars]
 ansible_connection=winrm
 ansible_port=5986
-ansible_user=ansible.arezzo
-ansible_password="2154@ns!ble@R3770"
 ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
 
@@ -191,8 +172,6 @@ arzhorpadcon02.arezzo.local
 [windows_ad:vars]
 ansible_connection=winrm
 ansible_port=5986
-ansible_user=ansible.arezzo
-ansible_password="2154@ns!ble@R3770"
 ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
 
@@ -204,7 +183,5 @@ ARZTS01.arezzo.local
 [arzts:vars]
 ansible_connection=winrm
 ansible_port=5986
-ansible_user=ansible.arezzo
-ansible_password="2154@ns!ble@R3770"
 ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
