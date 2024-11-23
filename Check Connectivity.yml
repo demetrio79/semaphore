@@ -1,5 +1,5 @@
  - name: Check connectivity
-   hosts: {{nodes}}
+   hosts: "{{nodes}}"
    tasks:
     - name: Ping all nodes
       ansible.builtin.ping:
