@@ -1,5 +1,5 @@
 repo_win_agent: "https://cdn.zabbix.com/zabbix/binaries/stable/7.0/7.0.5/zabbix_agent2-7.0.5-windows-amd64-openssl.msi"
-local_repo: "/etc/ansible/repo/win"
+local_repo: "/home/semaphore"
 zbx_agent2_ver: "zabbix_agent2-7.0.5-windows-amd64-openssl.msi"
 zbx_server: "arzbrepzbxprx01"
 zbx_server_tsbr: "172.31.223.15"
