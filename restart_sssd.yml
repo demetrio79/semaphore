@@ -1,0 +1,8 @@
+- name: Ansible restart sssd
+  hosts: "{{ nodes }}"
+  tasks:
+    - name: Restart Sercice with playbook
+      become: true
+      ansible.builtin.service:
+        name: sssd
+        state: restarted
