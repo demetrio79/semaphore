@@ -13,5 +13,5 @@
           path: "{{dir_down_win}}\\{{zbx_agent2_ver}}"
           arguments: 
             - /qn
-            - "Server={{zbx_server, zbx_server_old, zbx_server_tsbr}}""
+            - "Server={{zbx_server, zbx_server_old, zbx_server_tsbr}}"
           state: present
