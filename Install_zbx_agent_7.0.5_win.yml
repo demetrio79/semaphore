@@ -12,5 +12,5 @@
         ansible.windows.win_package:
           path: "{{dir_down_win}}\\{{zbx_agent2_ver}}"
           arguments: 
-            - "Server={{zbx_server, zbx_server_old, zbx_server_tsbr}}"
+            - "Server=arzbrepzbxprx01, 172.31.223.15"
           state: present
