@@ -166,22 +166,40 @@ ansible_port=5986
 ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
 
-[windows_ad]
+[windows_ad_bre]
 arzhorpadcon01.arezzo.local
 arzhorpadcon02.arezzo.local
 ARZBREPAD01.arezzo.local
 ARZBREPAD02.arezzo.local
-ARZCARPAD01.arezzo.local
-ARZCARPAD02.arezzo.local
-ARZCBOPAD01.arezzo.local
-ARZCBOPAD02.arezzo.local
 ARZBREPADCS01.arezzo.local
 
-[windows_ad:vars]
+[windows_ad_bre:vars]
 ansible_connection=winrm
 ansible_port=5986
 ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
+
+[windows_ad_car]
+ARZCARPAD01.arezzo.local
+ARZCARPAD02.arezzo.local
+
+[windows_ad_car:vars]
+ansible_connection=winrm
+ansible_port=5986
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_transport=ntlm
+
+[windows_ad_cbo]
+ARZCBOPAD01.arezzo.local
+ARZCBOPAD02.arezzo.local
+
+[windows_ad_cbo:vars]
+ansible_connection=winrm
+ansible_port=5986
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_transport=ntlm
+
+
 
 [arzts]
 ARZTS03.arezzo.local
