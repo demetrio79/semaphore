@@ -44,15 +44,9 @@ ARZBREPSMTP01.arezzo.local
 ARZBLZZNET.arezzo.local
 ARZBREDSAPDS01.arezzo.local
 ARZBREHRPA01.arezzo.local
-ARZBREPAD01.arezzo.local
-ARZBREPAD02.arezzo.local
-ARZBREPADCS01.arezzo.local
-ARZBREPADMIN01.arezzo.local
-ARZBREPADMIN01.arezzo.local
 ARZBREPDHCP02.arezzo.local
 ARZBREPPENTAH01.arezzo.local
 ARZBREPPRINT01.arezzo.local
-ARZBREPPWRAUT01.arezzo.local
 ARZBREPRDS01.arezzo.local
 ARZBREPRDS02.arezzo.local
 ARZBREPRDS03.arezzo.local
@@ -67,7 +61,6 @@ ARZBREPRPA01.arezzo.local
 ARZBREPSAPDS01.arezzo.local
 ARZBREPSCCM01.arezzo.local
 ARZBREPTS01.arezzo.local
-ARZBREPVEEAM.arezzo.local
 ARZBREPWSUS01.arezzo.local
 ARZBREPWSUS02.arezzo.local
 ARZBREVPRO01.arezzo.local
@@ -79,10 +72,6 @@ ARZHORHSAF01.arezzo.local
 ARZHORHSEGINFO.arezzo.local
 ARZHORHSENDA01.arezzo.local
 ARZHORHSRE01.arezzo.local
-ARZHORP9800CL02.arezzo.local
-ARZHORPADCON01.arezzo.local
-ARZHORPADCON02.arezzo.local
-ARZHORPADCS01.arezzo.local
 ARZHORPEDI01.arezzo.local
 ARZHORPEDI02.arezzo.local
 ARZHORPHORA02.arezzo.local
@@ -103,7 +92,6 @@ ARZHORPTECADV01.arezzo.local
 ARZHORPVDICP01.arezzo.local
 ARZHORPVDICS01.arezzo.local
 ARZHORPVDICS02.arezzo.local
-ARZHORSMTP01.arezzo.local
 ARZIIS01.arezzo.local
 ARZSAPDWQD01.arezzo.local
 ARZSAPPWQD01.arezzo.local
@@ -113,8 +101,6 @@ ARZSUPERCASH02.arezzo.local
 ARZTS01.arezzo.local
 ARZTS02.arezzo.local
 ARZTS03.arezzo.local
-ARZZZNETSYNCPRD02.arezzo.local
-ZDBGWPDB.arezzo.local
 
 [windows_bre:vars]
 ansible_connection=winrm 
