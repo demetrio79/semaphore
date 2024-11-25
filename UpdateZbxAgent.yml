@@ -1,0 +1,24 @@
+  - name: Uninstall Zabbix Agent Windows
+    hosts: "{{nodes}}"
+    tasks:
+      - name: Uninstall Zabbix Agent 4.2.8
+        ansible.windows.win_package:
+          product_id: '{8797D2A2-92CB-47BA-8163-7F9F5DE509EA}'
+          state: absent 
+ 
+- name: Install Zabbix Agent Windows
+    hosts: "{{nodes}}"
+    vars_files:
+      - inst_zbxagent2_vars.yml
+    tasks:
+      - name: Copy Zabbix Agent 7.0.5
+        ansible.windows.win_copy:
+          src: "{{local_repo}}/{{zbx_agent2_ver}}"
+          dest: "{{dir_down_win}}\\{{zbx_agent2_ver}}"
+      - name: Install Zabbix Agent 2
+        ansible.windows.win_package:
+          path: "{{dir_down_win}}\\{{zbx_agent2_ver}}"
+          arguments:
+            - /qn
+            - "Server=arzbrepzbxprx01,172.31.223.15,172.31.14.136"
+          state: present
