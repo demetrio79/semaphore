@@ -167,7 +167,15 @@ ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
 
 [windows_ad]
+arzhorpadcon01.arezzo.local
 arzhorpadcon02.arezzo.local
+ARZBREPAD01.arezzo.local
+ARZBREPAD02.arezzo.local
+ARZCARPAD01.arezzo.local
+ARZCARPAD02.arezzo.local
+ARZCBOPAD01.arezzo.local
+ARZCBOPAD02.arezzo.local
+ARZBREPADCS01.arezzo.local
 
 [windows_ad:vars]
 ansible_connection=winrm
