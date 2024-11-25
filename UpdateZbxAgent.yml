@@ -6,7 +6,7 @@
           product_id: '{8797D2A2-92CB-47BA-8163-7F9F5DE509EA}'
           state: absent 
  
-- name: Install Zabbix Agent Windows
+  - name: Install Zabbix Agent Windows
     hosts: "{{nodes}}"
     vars_files:
       - inst_zbxagent2_vars.yml
